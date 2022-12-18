@@ -1,0 +1,128 @@
+body {
+    padding: 10px;
+    margin: 0;
+    background: #eee;
+    font-family: sans-serif;
+}
+
+.index-post {
+    width: 1124px; transition: all 1.5s;
+    height: 564px; overflow: hidden; 
+    margin: auto;
+    /*display: block;*/
+    display: flex;
+    justify-content: center;
+    /*margin-top: 5%;*/
+}
+
+.container {
+    float: left;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 520px;
+    overflow: hidden;
+    background: #ffa500;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #00000073;
+    transition: all 0.3s;
+}
+
+/*.container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}*/
+
+.title{
+    padding: 0 52px;
+    /*margin: 10px 0;*/
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    /*border-style: solid;
+    border-color: black;*/
+    width: 320px;
+    
+    border: 5px solid rgb(129, 104, 104);
+    margin: 0;
+}
+
+.image-container {
+    display: block;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 0;
+    
+}
+
+.image-container img {
+    margin-top: 0;
+    width: 100%;
+    /*border-style: solid;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.meta-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    padding: 10px 20px;
+}
+
+.meta-container .title {
+    padding: 0;
+    margin: 10px 0;
+    font-size: 22px;
+    color: #0076b6;
+}
+
+.meta-container .desc {
+    font-size: 14px;
+    text-align: center;
+    color: #373737;
+    overflow: hidden;
+}
+
+.features {
+    border-style: dotted;
+    border-color: black;
+    /*border-top: 2px solid #0076b6;
+    border-bottom: 2px solid #0076b6;*/
+    display: flex;
+    align-items: justify;
+    flex-direction: column;
+    height: 110px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.Desc-Container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110px;
+    padding: 10px 20px;
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width:1124px){
+    .index-post{
+        width: 562px; height: 728px;
+    }
+}
+@media screen and (max-width:562px){
+    .index-post{
+        width: 281px; height: 1496px;
+    }
+}
